@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="H4TvPuW_YU-C26Yl2kOOJQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/gerador_de_veiculos" CVScreenId="31dab0d8-d196-448b-a726-88aaa720ed45" CvElementArea="430, 844, 114, 39" CvType="InputBox" DesignTimeRectangle="432, 845, 111, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='cor' tag='INPUT' type='text' class='margem_menor' aaname='Cor' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c822f72f-fe33-4e41-9dd5-c272f481ff75" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador Online de Veículos - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="31dab0d8-d196-448b-a726-88aaa720ed45" CvTextArea="397, 847, 33, 15" CvTextArgument="Cor:" CvType="Text" DesignTimeRectangle="398, 844, 32, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='area_resposta' tag='STRONG' class='' aaname='Cor:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Cor:' /&gt;" Guid="7654b77f-d2fe-4b05-b512-d28dd35b1fe9" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c06aee3c29f47aecbf3e1c7cc3cd3512.png" xmlns="">0WcUYAPxxF0i0C_e9RWQ-Rg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

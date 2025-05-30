@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BpPHZQI4Mk-VAj0QVeLGkg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/gerador_de_veiculos" CVScreenId="cd0bd7cf-0ffa-4aa0-b104-c8bf8d3e5bf2" CvElementArea="430, 762, 170, 38" CvType="InputBox" DesignTimeRectangle="432, 763, 167, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='renavam' tag='INPUT' type='text' class='margem_menor' aaname='Renavam' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c659b35c-404a-47ba-a28e-cbbc97c9799e" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador Online de Veículos - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cd0bd7cf-0ffa-4aa0-b104-c8bf8d3e5bf2" CvTextArea="344, 765, 86, 15" CvTextArgument="RENAVAM:" CvType="Text" DesignTimeRectangle="345, 762, 85, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='area_resposta' tag='STRONG' class='' aaname='RENAVAM:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='RENAVAM:' /&gt;" Guid="a957c2ca-c729-465d-9d76-69a61d89e362" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0d58b8186f82e121f198777ba746c467.png" xmlns="">0D1KFXtYZakqMI7FZ0zewjg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

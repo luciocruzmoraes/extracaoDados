@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="moeitGom0U6B0T4zeJxcGw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/gerador_de_nomes" CVScreenId="f1c5db2d-c189-4223-8124-215ed2ad2211" CvElementArea="284, 737, 109, 40" CvType="InputBox" DesignTimeRectangle="285, 738, 106, 37" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='gender' tag='SELECT' type='' class='' aaname='2. Escolha o Gênero:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="530fb5e9-a7d4-4a0c-a5e7-e127a4df5de0" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de Nomes - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f1c5db2d-c189-4223-8124-215ed2ad2211" CvTextArea="268, 718, 138, 15" CvTextArgument="2. Escolha O Gênero:" CvType="Text" DesignTimeRectangle="270, 719, 640, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='2. Escolha o Gênero:' tag='LABEL' type='' class='input-subtitle' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='2. Escolha o Gênero:' /&gt;" Guid="1ead8bf8-7c7f-4247-bbdd-6d6bba56483b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6eab4460164528e5783d3d568356c645.png" xmlns="">0eM18arRHv0-IqGqWjFAVGg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

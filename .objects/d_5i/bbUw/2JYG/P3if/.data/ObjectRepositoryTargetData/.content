@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="It5MV3skIkeoEqCaFTaisQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/gerador_de_nomes" CVScreenId="1b4abc18-0587-4fa0-930d-5d67dfd0167c" CvElementArea="271, 684, 215, 49" CvType="Button" DesignTimeRectangle="284, 686, 190, 45" FullSelectorArgument="&lt;webctrl parentid='nicks' tag='SPAN' /&gt;" Guid="2eb0fc05-fb74-4551-a8ca-ba79868c6c31" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de Nomes - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="496416f570b0e82b2cf3ff26544f0360.png" xmlns="">03N5EE2m_0kS3irjdrM9WIg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

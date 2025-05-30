@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SSWfsEVt30umTJwLyqbaqQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/gerador_de_veiculos" CVScreenId="cd0bd7cf-0ffa-4aa0-b104-c8bf8d3e5bf2" CvElementArea="430, 721, 113, 38" CvType="InputBox" DesignTimeRectangle="432, 722, 111, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ano' tag='INPUT' type='text' class='margem_menor' aaname='Ano do Veículo' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="129f8eb3-0b2c-4887-8913-ca521f2c4523" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador Online de Veículos - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cd0bd7cf-0ffa-4aa0-b104-c8bf8d3e5bf2" CvTextArea="391, 724, 39, 15" CvTextArgument="Ano:" CvType="Text" DesignTimeRectangle="394, 721, 36, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='area_resposta' tag='STRONG' class='' aaname='Ano:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Ano:' /&gt;" Guid="755c1eab-26a7-483d-94ee-7cc10233f1c9" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8101ae8250bb43bb651096904b1eab2f.png" xmlns="">0KFBTWMAyKUaNpyEw-Iujhw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

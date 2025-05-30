@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ErrWhhJ52EKev-TUUtKbww" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/gerador_de_cpf" CVScreenId="5e4f5da9-8c27-4048-8fc3-8e2c88f3e848" CvElementArea="270, 610, 656, 36" CvType="InputBox" DesignTimeRectangle="270, 611, 655, 36" FullSelectorArgument="&lt;webctrl id='texto_cpf' tag='DIV' /&gt;" Guid="38f92c05-ce99-4857-b8d9-67b3ecaeaf8d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de CPF - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="b1cf61747add3783ac45883303493498.png" xmlns="">0xuoAbQua7kKU_gZ5Xyo-Zg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

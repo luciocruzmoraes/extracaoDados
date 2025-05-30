@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UO0J_004QECjaiIY6nnTVg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/gerador_de_veiculos" CVScreenId="31dab0d8-d196-448b-a726-88aaa720ed45" CvElementArea="430, 803, 114, 38" CvType="InputBox" DesignTimeRectangle="432, 804, 111, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='placa_veiculo' tag='INPUT' type='text' class='margem_menor' aaname='Placa do Veículo' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2363497a-6a0b-4edf-ae24-0772cc8dddd4" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador Online de Veículos - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="31dab0d8-d196-448b-a726-88aaa720ed45" CvTextArea="382, 806, 47, 15" CvTextArgument="Placa:" CvType="Text" DesignTimeRectangle="383, 803, 47, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='area_resposta' tag='STRONG' class='' aaname='Placa:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Placa:' /&gt;" Guid="64a47794-f159-4374-9a94-394f8889ecbd" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9d2232416ebc7d12669cae393b1865f0.png" xmlns="">0FhOH1p_reEqZ5jmIFm5adg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
