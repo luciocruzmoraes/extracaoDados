@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uoQQtakgAUGXCOxSlUzYVg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/validador_rg" CVScreenId="31bf7b0f-2cc9-4656-9bdf-3fdf5a91b4bd" CvElementArea="735, 504, 710, 141" CvType="InputBox" DesignTimeRectangle="736, 508, 708, 138" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='texto_resposta' tag='TEXTAREA' type='' class='' aaname='Resposta:            ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4d864975-d50a-4176-8080-d8fad4aa4168" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de RG - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="31bf7b0f-2cc9-4656-9bdf-3fdf5a91b4bd" CvElementArea="735, 504, 710, 141" CvTextArea="735, 491, 64, 16" CvTextArgument="Resposta:" CvType="InputBox" DesignTimeRectangle="736, 487, 708, 159" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='area_resposta' tag='LABEL' type='' class='' aaname='Resposta:            ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Resposta:' /&gt;" Guid="c4700ddd-508d-4fd5-a5aa-82b63b6cd5f2" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4759ebbd6fd8480d81edb6a2c3077cc8.png" xmlns="">0Uiv355mWjUOnFp1gt3pp2A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

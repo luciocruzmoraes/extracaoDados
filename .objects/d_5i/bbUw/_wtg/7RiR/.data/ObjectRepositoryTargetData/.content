@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lpqfChJS8ECeQf8vG2gf3g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/validador_de_renavam" CVScreenId="5c81a08a-f1a8-46e1-bc4c-9a9f12cc89fe" CvElementArea="735, 454, 709, 139" CvType="InputBox" DesignTimeRectangle="736, 457, 708, 138" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='texto_resposta' tag='TEXTAREA' type='' class='' aaname='Resposta:            ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="be5f7948-83a7-4f50-b844-06fe7d325a86" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador Online de RENAVAM - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5c81a08a-f1a8-46e1-bc4c-9a9f12cc89fe" CvElementArea="735, 454, 709, 139" CvTextArea="735, 440, 65, 16" CvTextArgument="Resposta:" CvType="InputBox" DesignTimeRectangle="736, 436, 708, 159" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='area_resposta' tag='LABEL' type='' class='' aaname='Resposta:            ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Resposta:' /&gt;" Guid="4f93e5a4-64a5-4b23-a494-bde9ef16b732" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="18c31f976dc7878197524af3eab52a9c.png" xmlns="">0bd97hqyksUKnW4UCuiJlBQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

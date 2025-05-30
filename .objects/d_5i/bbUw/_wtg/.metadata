@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Validador de CPF - 4Devs",
+  "Type": "Screen",
+  "Id": "_wtgsP9ltUSZ1TmNLYNudg",
+  "Reference": "ZEXXzmRlEE-OL1ynQQKEvQ/_wtgsP9ltUSZ1TmNLYNudg",
+  "ParentRef": "ZEXXzmRlEE-OL1ynQQKEvQ/bbUw3blAiE-Uw12p8h7DnQ",
+  "Created": "2025-05-30T17:36:23.3562079Z",
+  "Updated": "2025-05-30T17:36:23.3562079Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

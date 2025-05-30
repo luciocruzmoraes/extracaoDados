@@ -1,0 +1,13 @@
+﻿{
+  "Name": "1. Gerar com pontuação",
+  "Type": "Element",
+  "Id": "sP1fxbPqjkikwWkTweAydQ",
+  "Reference": "ZEXXzmRlEE-OL1ynQQKEvQ/sP1fxbPqjkikwWkTweAydQ",
+  "ParentRef": "ZEXXzmRlEE-OL1ynQQKEvQ/2JYGNHDjGUOisGL0gWOngA",
+  "Created": "2025-05-30T18:32:04.9430577Z",
+  "Updated": "2025-05-30T18:32:04.9430577Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

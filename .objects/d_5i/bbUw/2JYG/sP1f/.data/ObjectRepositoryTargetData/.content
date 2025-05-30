@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cBSZJbdJck27XpO0raiFcQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/gerador_de_cpf" CVScreenId="e17b5df4-8ee0-491c-9226-b46751aef39b" CvElementArea="855, 358, 21, 21" CvTextArea="880, 360, 30, 15" CvTextArgument="Não" CvType="RadioButton" DesignTimeRectangle="858, 356, 62, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Não ' tag='LABEL' /&gt;" Guid="eb481b32-a31f-468c-9855-be80a9097f85" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de CPF - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="744, 327, 343, 53" FuzzySelectorArgument="&lt;webctrl type='' parentid='app-wrapper' tag='DIV' class='input-group inline' aaname='                                                                 ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1. Gerar com pontuação?&amp;#xA;Sim&amp;#xA; &amp;#xA;Não' /&gt;" Guid="66544d38-5009-403d-b6b4-55b0f5ad3804" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f738b45434981c4a7bf1e48a3573c010.png" xmlns="">0Q9SUWQN63EuwWiLFK8XlWQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="THF-CpPQJkSKSALBUtiBbw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/validador_cpf" CVScreenId="afa9613c-2526-4df7-9ffe-a554e91d4ed0" CvElementArea="997, 421, 185, 53" CvType="Button" DesignTimeRectangle="999, 424, 181, 46" ElementType="Button" FullSelectorArgument="&lt;webctrl id='bt_validar_cpf' tag='INPUT' /&gt;" Guid="4093b52c-1ad4-4198-b5bc-2c79362379a7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de CPF - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="8996f7b85dd58b88df7eeade9d177b38.png" xmlns="">0Ef_eFMpHFUyviNvGXg1YaA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

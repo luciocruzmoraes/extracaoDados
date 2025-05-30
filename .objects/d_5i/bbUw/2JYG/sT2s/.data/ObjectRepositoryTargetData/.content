@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LXDrwccrRkqan4w4thvGNQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/validador_de_renavam" CVScreenId="1e6c97c2-d878-4d55-8dd7-4dafe4136074" CvElementArea="825, 333, 21, 22" CvTextArea="850, 335, 30, 15" CvTextArgument="Não" CvType="RadioButton" DesignTimeRectangle="828, 331, 62, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Não ' tag='LABEL' /&gt;" Guid="9ae587da-f531-4fa0-8242-9f70a682e5d7" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de RG - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="1e6c97c2-d878-4d55-8dd7-4dafe4136074" CvTextArea="728, 305, 169, 18" CvTextArgument="1. Gerar com Pontuação?" CvType="Text" DesignTimeRectangle="729, 302, 348, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='input-subtitle' parentid='app-wrapper' tag='DIV' type='' aaname='1. Gerar com Pontuação?' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1. Gerar com Pontuação?' /&gt;" Guid="f9f397b1-5543-4607-a589-062645c1706e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e8169595e4915b7a467a11a26ce7d9ec.png" xmlns="">08FxMsBrYak2IUYayH6RY8A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

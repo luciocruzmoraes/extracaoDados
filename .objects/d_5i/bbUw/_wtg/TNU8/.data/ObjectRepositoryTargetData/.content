@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="9lQb8KcK1E6Qhx6F704U6Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/validador_cpf" CVScreenId="0c4f6fa5-e219-42ea-8c4a-d498da817967" CvElementArea="743, 330, 335, 39" CvType="InputBox" DesignTimeRectangle="744, 331, 333, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='txt_cpf' tag='INPUT' type='text' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e0b20a12-c53a-4907-9a90-b420567f1d65" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de CPF - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0c4f6fa5-e219-42ea-8c4a-d498da817967" CvTextArea="728, 305, 102, 15" CvTextArgument="1. Digite O CPF:" CvType="Text" DesignTimeRectangle="729, 302, 348, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='input-subtitle' parentid='app-wrapper' tag='DIV' type='' aaname='1. Digite o CPF:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1. Digite o CPF:' /&gt;" Guid="b18aa24b-f2b5-49ea-ad37-f25adae4effc" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0f50e260a5c61a4b118af3ed893d1cd4.png" xmlns="">0m1ss4JI1TUmUx8wquE2rHg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="sE7SqPfBjUCo4CKTOw0OUQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/validador_de_renavam" CVScreenId="5c81a08a-f1a8-46e1-bc4c-9a9f12cc89fe" CvElementArea="734, 309, 195, 40" CvType="InputBox" DesignTimeRectangle="736, 310, 192, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='txt_renavam' tag='INPUT' type='text' class='' aaname='Digite a RENAVAM:            ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2a62bf6b-6456-44f5-a055-39e7f4ed6a64" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador Online de RENAVAM - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5c81a08a-f1a8-46e1-bc4c-9a9f12cc89fe" CvElementArea="734, 309, 195, 40" CvTextArea="735, 293, 123, 16" CvTextArgument="Digite a RENAVAM:" CvType="InputBox" DesignTimeRectangle="736, 289, 708, 58" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Digite a RENAVAM:            ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Digite a RENAVAM:' /&gt;" Guid="c840726f-505e-40b8-b154-539e8f9890c2" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ce63735f1a4f61687928d841c21697ad.png" xmlns="">0U3y3eOz4X0qRbwNGQjCl_w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

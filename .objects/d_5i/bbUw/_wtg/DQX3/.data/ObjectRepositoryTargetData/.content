@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8FbRKmAvm0q6PvxmJYPoug" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/validador_cpf" CVScreenId="c5638569-a699-4f2a-8ea7-a0dbc1cbec54" CvElementArea="743, 330, 335, 39" CvType="InputBox" DesignTimeRectangle="744, 331, 333, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='txt_cpf' tag='INPUT' type='text' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b14a8be3-8073-40ff-a9b7-a0050006d649" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de CPF - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c5638569-a699-4f2a-8ea7-a0dbc1cbec54" CvTextArea="728, 305, 102, 15" CvTextArgument="1. Digite O CPF:" CvType="Text" DesignTimeRectangle="729, 302, 348, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='input-subtitle' parentid='app-wrapper' tag='DIV' type='' aaname='1. Digite o CPF:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1. Digite o CPF:' /&gt;" Guid="d1a72ae1-015d-4d18-8046-4db3f85e8e10" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="eda6b39a86f9bf3cb0ecf21d54f0e0d2.png" xmlns="">0gYRODhpr_kyb2pz3ZYYXRw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

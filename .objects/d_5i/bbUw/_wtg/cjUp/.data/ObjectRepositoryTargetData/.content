@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="VXmGP85x3k-we8LJY3XTng" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/validador_rg" CVScreenId="31bf7b0f-2cc9-4656-9bdf-3fdf5a91b4bd" CvElementArea="1016, 411, 147, 57" CvTextArea="1049, 430, 80, 15" CvTextArgument="Validar RG" CvType="Button" DesignTimeRectangle="1019, 414, 141, 53" ElementType="Button" FullSelectorArgument="&lt;webctrl id='bt_validar_rg' tag='INPUT' /&gt;" Guid="14e7727b-29aa-48e7-ac13-50f76c28910f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de RG - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="b2a54f312a430f6b0dc2720d3ff1607f.png" xmlns="">07jzM_EclgE-ydiY9CRRUdw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

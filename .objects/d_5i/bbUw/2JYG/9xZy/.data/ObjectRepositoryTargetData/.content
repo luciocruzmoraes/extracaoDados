@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7vNlCGks70W0U1Fv7yfBQw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/validador_de_renavam" DesignTimeRectangle="858, 361, 16, 16" FullSelectorArgument="&lt;webctrl idx='2' tag='SPAN' /&gt;" Guid="4806bdbf-4b02-4e0c-bc92-9a26c4d58cbf" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de CPF - 4Devs' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="f01241450415e91cbb9e9e68f964c3f8.png" xmlns="">0NDnA2cPz40ubOzwAPOs5fw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">ClickTrigger</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

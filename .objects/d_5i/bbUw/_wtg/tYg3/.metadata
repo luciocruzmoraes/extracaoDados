@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Digite o RG(1)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "tYg3Ai0cb0yIyXuojbdXzA",
+  "Reference": "ZEXXzmRlEE-OL1ynQQKEvQ/tYg3Ai0cb0yIyXuojbdXzA",
+  "ParentRef": "ZEXXzmRlEE-OL1ynQQKEvQ/_wtgsP9ltUSZ1TmNLYNudg",
+  "Created": "2025-05-30T18:55:28.6876482Z",
+  "Updated": "2025-05-30T18:55:28.6876482Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="qUFsbygSUEiegn8ODldEww" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/validador_rg" CVScreenId="509c568b-ec92-45d6-8cc5-b71b1f9e8d08" CvElementArea="734, 360, 163, 39" CvType="InputBox" DesignTimeRectangle="736, 361, 160, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='txt_rg' tag='INPUT' type='text' class='' aaname='Digite o RG:            ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="5409d742-74d2-4067-9d0b-ec511ddf8ae4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de RG - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="509c568b-ec92-45d6-8cc5-b71b1f9e8d08" CvElementArea="734, 360, 163, 39" CvTextArea="735, 344, 77, 16" CvTextArgument="Digite O RG:" CvType="InputBox" DesignTimeRectangle="736, 340, 708, 58" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Digite o RG:            ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Digite o RG:' /&gt;" Guid="effd67cb-bffa-4101-900a-fa42aa5a6f95" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9eb540cd578c3aaa62b1495b8bfedac0.png" xmlns="">03UoFpwoJU0uOIy8Z8Nf5dw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
