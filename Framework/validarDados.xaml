@@ -103,9 +103,10 @@
       <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
       <AssemblyReference>System.Data.SqlClient</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="validarDados" sap:VirtualizedContainerService.HintSize="1118,5281.999999999999" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="validarDados" sap:VirtualizedContainerService.HintSize="1342,1904" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="variable1" />
       <Variable x:TypeArguments="scg:IEnumerable(ui:QueueItem)" Name="validarDados" />
@@ -118,47 +119,45 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="validando dados" sap:VirtualizedContainerService.HintSize="660,5259" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="validando dados" sap:VirtualizedContainerService.HintSize="554,1881" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="dadosCliente" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BuildDataTable DataTable="[dadosCliente]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="626,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;nomeCliente&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;sexoCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;cpfCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;rgCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;marcaVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;anoVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;corVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;veicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;placaVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;renavamVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:BuildDataTable>
-      <ui:GetQueueItems Duration="{x:Null}" From="{x:Null}" Priority="{x:Null}" Reference="{x:Null}" Skip="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" Top="{x:Null}" DisplayName="Get Queue Items" FilterStrategy="Equals" FolderPath="aprendizado" sap:VirtualizedContainerService.HintSize="626,57" sap2010:WorkflowViewState.IdRef="GetQueueItems_1" QueueItemStates="All" QueueName="validadorDados" Result="[validarDados]">
+      <ui:BuildDataTable DataTable="[dadosCliente]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="520,57" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;nomeCliente&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;sexoCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;cpfCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;rgCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;marcaVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;anoVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;corVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;veicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;placaVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;renavamVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
+      </ui:BuildDataTable>
+      <ui:GetQueueItems Duration="{x:Null}" From="{x:Null}" Priority="{x:Null}" Reference="{x:Null}" Skip="{x:Null}" TimeoutMS="{x:Null}" To="{x:Null}" Top="{x:Null}" DisplayName="Get Queue Items" FilterStrategy="Equals" FolderPath="aprendizado" sap:VirtualizedContainerService.HintSize="520,175" sap2010:WorkflowViewState.IdRef="GetQueueItems_1" QueueItemStates="All" QueueName="validarDados" Result="[validarDados]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
       </ui:GetQueueItems>
-      <ui:ForEach x:TypeArguments="ui:QueueItem" CurrentIndex="{x:Null}" DisplayName="For Each currentQueueItem" sap:VirtualizedContainerService.HintSize="626,4888" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[validarDados]">
+      <ui:ForEach x:TypeArguments="ui:QueueItem" CurrentIndex="{x:Null}" DisplayName="For Each currentQueueItem" sap:VirtualizedContainerService.HintSize="520,1518" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[validarDados]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="ui:QueueItem">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:QueueItem" Name="currentQueueItem" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="624,4757" sap2010:WorkflowViewState.IdRef="Sequence_2">
-              <Sequence.Variables>
-                <Variable x:TypeArguments="ui:QueueItem" Name="dados" />
-              </Sequence.Variables>
+            <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="518,1388" sap2010:WorkflowViewState.IdRef="Sequence_15">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:GetQueueItem ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Transaction Item" FolderPath="aprendizado" sap:VirtualizedContainerService.HintSize="382,166" sap2010:WorkflowViewState.IdRef="GetQueueItem_1" QueueType="validadorDados" TransactionItem="[currentQueueItem]">
+              <ui:GetQueueItem ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Get Transaction Item" FolderPath="aprendizado" sap:VirtualizedContainerService.HintSize="484,175" sap2010:WorkflowViewState.IdRef="GetQueueItem_1" QueueType="validarDados" TransactionItem="[currentQueueItem]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -166,7 +165,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:GetQueueItem>
-              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="590,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
                 <ui:CommentOut.Body>
                   <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <sap:WorkflowViewStateService.ViewState>
@@ -185,20 +184,20 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Validador de CPF - 4Devs" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="590,4134" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Version="V2">
+              <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Always" DisplayName="Chrome Validador de CPF - 4Devs" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="484,1048" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Version="V2">
                 <uix:NApplicationCard.Body>
                   <ActivityAction x:TypeArguments="x:Object">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="556,3884" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="450,759" sap2010:WorkflowViewState.IdRef="Sequence_5">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '1. Digite o CPF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,225" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '1. Digite o CPF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="4devs.com.br/validador_cpf" CVScreenId="0c4f6fa5-e219-42ea-8c4a-d498da817967" ContentHash="9lQb8KcK1E6Qhx6F704U6Q" CvElementArea="743, 330, 335, 39" CvType="InputBox" DesignTimeRectangle="744, 331, 333, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='txt_cpf' tag='INPUT' type='text' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e0b20a12-c53a-4907-9a90-b420567f1d65" InformativeScreenshot="0f50e260a5c61a4b118af3ed893d1cd4.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/TNU83nGjm0yBQMNjRwqpJg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de CPF - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                             <uix:TargetAnchorable.Anchors>
@@ -218,8 +217,14 @@
                             </uix:VerifyExecutionOptions.Timeout>
                           </uix:VerifyExecutionOptions>
                         </uix:NClick.VerifyOptions>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="522,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                         <ui:CommentOut.Body>
                           <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,337" sap2010:WorkflowViewState.IdRef="Sequence_12">
                             <sap:WorkflowViewStateService.ViewState>
@@ -263,18 +268,24 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:CommentOut>
-                      <uix:NSetText DisplayName="Set Text '1. Digite o CPF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,194" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Text="[currentQueueItem.SpecificContent(&quot;cpfCliente&quot;).ToString]" Version="V4">
+                      <uix:NSetText DisplayName="Set Text '1. Digite o CPF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,194" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Text="[currentQueueItem.SpecificContent(&quot;cpfCliente&quot;).ToString]" Version="V4">
                         <uix:NSetText.Target>
-                          <uix:TargetAnchorable BrowserURL="4devs.com.br/validador_cpf" CVScreenId="c5638569-a699-4f2a-8ea7-a0dbc1cbec54" ContentHash="8FbRKmAvm0q6PvxmJYPoug" CvElementArea="743, 330, 335, 39" CvType="InputBox" DesignTimeRectangle="744, 331, 333, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='txt_cpf' tag='INPUT' type='text' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b14a8be3-8073-40ff-a9b7-a0050006d649" InformativeScreenshot="eda6b39a86f9bf3cb0ecf21d54f0e0d2.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/DQX3pjnt_kCctLyy8mjkjw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de CPF - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                          <uix:TargetAnchorable BrowserURL="4devs.com.br/validador_cpf" CVScreenId="cefbbed0-d88c-4185-8135-34ebc67f9a7c" ContentHash="2cOWmg9qFUmN4w5HqNejQA" CvElementArea="744, 330, 334, 39" CvType="InputBox" DesignTimeRectangle="744, 331, 333, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='txt_cpf' tag='INPUT' type='text' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="edb53430-1066-4360-b358-fef634e2f78c" InformativeScreenshot="f288851d471eb57d64074508fa8eac93.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/DQX3pjnt_kCctLyy8mjkjw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de CPF - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                             <uix:TargetAnchorable.Anchors>
                               <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                <uix:Target CVScreenId="c5638569-a699-4f2a-8ea7-a0dbc1cbec54" CvTextArea="728, 305, 102, 15" CvTextArgument="1. Digite O CPF:" CvType="Text" DesignTimeRectangle="729, 302, 348, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='input-subtitle' parentid='app-wrapper' tag='DIV' type='' aaname='1. Digite o CPF:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1. Digite o CPF:' /&gt;" Guid="d1a72ae1-015d-4d18-8046-4db3f85e8e10" SearchSteps="FuzzySelector, CV" />
+                                <uix:Target CVScreenId="cefbbed0-d88c-4185-8135-34ebc67f9a7c" CvTextArea="728, 305, 102, 15" CvTextArgument="1. Digite O CPF:" CvType="Text" DesignTimeRectangle="729, 302, 348, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='input-subtitle' parentid='app-wrapper' tag='DIV' type='' aaname='1. Digite o CPF:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1. Digite o CPF:' /&gt;" Guid="d38d8315-282f-4cd3-88c2-db6d0b0fea6a" SearchSteps="FuzzySelector, CV" />
                               </scg:List>
                             </uix:TargetAnchorable.Anchors>
                           </uix:TargetAnchorable>
                         </uix:NSetText.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
                       </uix:NSetText>
-                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Validar CPF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,225" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Version="V4">
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Validar CPF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Version="V4">
                         <uix:NClick.Target>
                           <uix:TargetAnchorable BrowserURL="4devs.com.br/validador_cpf" CVScreenId="afa9613c-2526-4df7-9ffe-a554e91d4ed0" ContentHash="THF-CpPQJkSKSALBUtiBbw" CvElementArea="997, 421, 185, 53" CvType="Button" DesignTimeRectangle="999, 424, 181, 46" ElementType="Button" FullSelectorArgument="&lt;webctrl id='bt_validar_cpf' tag='INPUT' /&gt;" Guid="4093b52c-1ad4-4198-b5bc-2c79362379a7" InformativeScreenshot="8996f7b85dd58b88df7eeade9d177b38.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/njEmS9LJeEuajxqpngt7NA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de CPF - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                         </uix:NClick.Target>
@@ -288,8 +299,14 @@
                             </uix:VerifyExecutionOptions.Timeout>
                           </uix:VerifyExecutionOptions>
                         </uix:NClick.VerifyOptions>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
                       </uix:NClick>
-                      <uix:NGetText DisplayName="Get Text 'Resposta'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,189" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" TextString="[respValidCpf]" Version="V4">
+                      <uix:NGetText DisplayName="Get Text 'Resposta'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" TextString="[respValidCpf]" Version="V4">
                         <uix:NGetText.Target>
                           <uix:TargetAnchorable BrowserURL="4devs.com.br/validador_cpf" ContentHash="F6QKNPMc3Ue848fA36sCBw" DesignTimeRectangle="739, 224, 335, 64" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='texto_resposta' tag='TEXTAREA' type='' class='output-txt' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a6d2e7d1-1f34-4e8a-8480-3106fa7dd446" InformativeScreenshot="b31501592549b72dacbea4eb9f31e992.png" IsResponsive="True" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/kA_iZosHPUa51PVnIQ92dg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de CPF - 4Devs' /&gt;" SearchSteps="FuzzySelector" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                             <uix:TargetAnchorable.Anchors>
@@ -301,47 +318,184 @@
                         </uix:NGetText.Target>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </uix:NGetText>
-                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="522,117" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[respValidCpf]" />
-                      <If Condition="[respValidCpf.Contains(&quot;Falso&quot;)]" sap:VirtualizedContainerService.HintSize="522,2815" sap2010:WorkflowViewState.IdRef="If_1">
+                      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                        <ui:CommentOut.Body>
+                          <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,169" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,109" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[respValidCpf]" />
+                          </Sequence>
+                        </ui:CommentOut.Body>
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:CommentOut>
+                      <If Condition="[respValidCpf.Contains(&quot;Falso&quot;)]" sap:VirtualizedContainerService.HintSize="416,50" sap2010:WorkflowViewState.IdRef="If_1">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="520,25" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[New Object() {currentQueueItem.SpecificContent(&quot;nomeCliente&quot;).ToString(), currentQueueItem.SpecificContent(&quot;sexoCliente&quot;).ToString(), currentQueueItem.SpecificContent(&quot;cpfCliente&quot;).ToString(), currentQueueItem.SpecificContent(&quot;rgCliente&quot;).ToString(), currentQueueItem.SpecificContent(&quot;marcaVeicCliente&quot;).ToString(), currentQueueItem.SpecificContent(&quot;anoVeicCliente&quot;).ToString(), currentQueueItem.SpecificContent(&quot;corVeicCliente&quot;).ToString(), currentQueueItem.SpecificContent(&quot;veicCliente&quot;).ToString(), currentQueueItem.SpecificContent(&quot;placaVeicCliente&quot;).ToString(), currentQueueItem.SpecificContent(&quot;renavamVeicCliente&quot;).ToString(), &quot;CPF Inválido&quot;}]" DataTable="[dadosCliente]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="382,209" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-                          </Sequence>
-                        </If.Then>
-                        <If.Else>
-                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="520,2658" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="488,222" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <Sequence.Variables>
+                              <Variable x:TypeArguments="x:String" Name="nomeCliente" />
+                              <Variable x:TypeArguments="x:String" Name="sexoCliente" />
+                              <Variable x:TypeArguments="x:String" Name="rgCliente" />
+                              <Variable x:TypeArguments="x:String" Name="marcaVeicCliente" />
+                              <Variable x:TypeArguments="x:String" Name="anoVeicCliente" />
+                              <Variable x:TypeArguments="x:String" Name="corVeicCliente" />
+                              <Variable x:TypeArguments="x:String" Name="placaVeic" />
+                              <Variable x:TypeArguments="x:String" Name="veicCliente" />
+                              <Variable x:TypeArguments="x:String" Name="renavamVeic" />
+                              <Variable x:TypeArguments="x:String" Name="cpfCliente" />
+                            </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,448" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[currentQueueItem.SpecificContent(&quot;renavamVeicCliente&quot;).ToString()]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:MessageBox>
+                            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                              <ui:MultipleAssign.AssignOperations>
+                                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="16">
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[nomeCliente]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[currentQueueItem.SpecificContent("nomeCliente").ToString()]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[sexoCliente]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[currentQueueItem.SpecificContent("sexoCliente").ToString()]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[rgCliente]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[currentQueueItem.SpecificContent("rgCliente").ToString()]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[marcaVeicCliente]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[currentQueueItem.SpecificContent("marcaVeicCliente").ToString()]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[anoVeicCliente]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[currentQueueItem.SpecificContent("anoVeicCliente").ToString()]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[corVeicCliente]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[currentQueueItem.SpecificContent("corVeicCliente").ToString()]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[veicCliente]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[currentQueueItem.SpecificContent("veicCliente").ToString()]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[placaVeic]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[currentQueueItem.SpecificContent("placaVeicCliente").ToString()]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_9">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[renavamVeic]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[currentQueueItem.SpecificContent("renavamVeicCliente").ToString()]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_10">
+                                    <ui:AssignOperation.To>
+                                      <OutArgument x:TypeArguments="x:String">[cpfCliente]</OutArgument>
+                                    </ui:AssignOperation.To>
+                                    <ui:AssignOperation.Value>
+                                      <InArgument x:TypeArguments="x:String">[currentQueueItem.SpecificContent("cpfCliente").ToString()]</InArgument>
+                                    </ui:AssignOperation.Value>
+                                  </ui:AssignOperation>
+                                </scg:List>
+                              </ui:MultipleAssign.AssignOperations>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:MultipleAssign>
+                            <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ currentQueueItem.SpecificContent(&quot;nomeCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;sexoCliente&quot;).ToString,currentQueueItem.SpecificContent(&quot;cpfCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;rgCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;marcaVeicCliente&quot;).ToString,currentQueueItem.SpecificContent(&quot;anoVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;corVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;veicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;placaVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;renavamVeicCliente&quot;).ToString,&quot;CPF Inválido&quot;}]" DataTable="[dadosCliente]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="454,48" sap2010:WorkflowViewState.IdRef="AddDataRow_8">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:AddDataRow>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="488,1335" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="CommentOut_3">
                               <ui:CommentOut.Body>
-                                <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,337" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Digite o RG'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,277" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Text="[currentQueueItem.SpecificContent(&quot;rgCliente&quot;).ToString]" Version="V4">
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Digite o RG'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Text="[currentQueueItem.SpecificContent(&quot;rgCliente&quot;).ToString]" Version="V4">
                                     <uix:NTypeInto.Target>
                                       <uix:TargetAnchorable BrowserURL="4devs.com.br/validador_rg" CVScreenId="509c568b-ec92-45d6-8cc5-b71b1f9e8d08" ContentHash="qUFsbygSUEiegn8ODldEww" CvElementArea="734, 360, 163, 39" CvType="InputBox" DesignTimeRectangle="736, 361, 160, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='txt_rg' tag='INPUT' type='text' class='' aaname='Digite o RG:            ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="5409d742-74d2-4067-9d0b-ec511ddf8ae4" InformativeScreenshot="9eb540cd578c3aaa62b1495b8bfedac0.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/3rKKJ_C5T06uWHk6iuVPeQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de RG - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                         <uix:TargetAnchorable.Anchors>
@@ -363,15 +517,48 @@
                                     </uix:NTypeInto.VerifyOptions>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </uix:NTypeInto>
                                 </Sequence>
                               </ui:CommentOut.Body>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </ui:CommentOut>
-                            <uix:NSetText DisplayName="Set Text 'Digite o RG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,194" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Text="[currentQueueItem.SpecificContent(&quot;rgCliente&quot;).ToString]" Version="V4">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Validador de RG(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Version="V4">
+                              <uix:NClick.Target>
+                                <uix:TargetAnchorable BrowserURL="4devs.com.br/validador_cpf" CVScreenId="b9d5995b-a6f7-40ec-b66a-cec6854ccc47" ContentHash="mLCAj6YqaUOCIUsITqfIgA" CvElementArea="667, 807, 17, 20" CvTextArea="468, 808, 101, 14" CvTextArgument="Validador de RG" CvType="ArrowButton" DesignTimeRectangle="460, 802, 228, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Validador de RG' parentid='top-nav' tag='A' /&gt;" Guid="7ab534af-ebad-46a4-a42b-6ffe8cbe0918" InformativeScreenshot="671fd1d178e770fe58a00b4915e8734e.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/OKBrPo6O50iMzPZM7UkEpw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de CPF - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                                  <uix:TargetAnchorable.Anchors>
+                                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                      <uix:Target CVScreenId="b9d5995b-a6f7-40ec-b66a-cec6854ccc47" CvElementArea="667, 776, 17, 20" CvTextArea="468, 778, 148, 14" CvTextArgument="Validador de RENAVAM" CvType="ArrowButton" DesignTimeRectangle="460, 772, 228, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Validador de RENAVAM' parentid='top-nav' tag='A' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Validador de RENAVAM' /&gt;" Guid="a14df90a-c301-41ca-b3a6-6ce4fef5cecb" SearchSteps="FuzzySelector, CV" />
+                                    </scg:List>
+                                  </uix:TargetAnchorable.Anchors>
+                                </uix:TargetAnchorable>
+                              </uix:NClick.Target>
+                              <uix:NClick.VerifyOptions>
+                                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                  <uix:VerifyExecutionOptions.Retry>
+                                    <InArgument x:TypeArguments="x:Boolean" />
+                                  </uix:VerifyExecutionOptions.Retry>
+                                  <uix:VerifyExecutionOptions.Timeout>
+                                    <InArgument x:TypeArguments="x:Double" />
+                                  </uix:VerifyExecutionOptions.Timeout>
+                                </uix:VerifyExecutionOptions>
+                              </uix:NClick.VerifyOptions>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NClick>
+                            <uix:NSetText DisplayName="Set Text 'Digite o RG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Text="[currentQueueItem.SpecificContent(&quot;rgCliente&quot;).ToString]" Version="V4">
                               <uix:NSetText.Target>
                                 <uix:TargetAnchorable BrowserURL="4devs.com.br/validador_rg" CVScreenId="60c5cd2d-5128-4991-8e11-aa906681d6be" ContentHash="kRP010yk8Uy3HEjod6dmXQ" CvElementArea="734, 360, 163, 39" CvType="InputBox" DesignTimeRectangle="736, 361, 160, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='txt_rg' tag='INPUT' type='text' class='' aaname='Digite o RG:            ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="097ac870-3fa2-405c-af97-9205d9fb5ebe" InformativeScreenshot="d576b232c8dfdcd743aaf7d7320d22a4.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/tYg3Ai0cb0yIyXuojbdXzA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de RG - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                   <uix:TargetAnchorable.Anchors>
@@ -381,8 +568,14 @@
                                   </uix:TargetAnchorable.Anchors>
                                 </uix:TargetAnchorable>
                               </uix:NSetText.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
                             </uix:NSetText>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Validar RG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Version="V4">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Validar RG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Version="V4">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="4devs.com.br/validador_rg" CVScreenId="31bf7b0f-2cc9-4656-9bdf-3fdf5a91b4bd" ContentHash="VXmGP85x3k-we8LJY3XTng" CvElementArea="1016, 411, 147, 57" CvTextArea="1049, 430, 80, 15" CvTextArgument="Validar RG" CvType="Button" DesignTimeRectangle="1019, 414, 141, 53" ElementType="Button" FullSelectorArgument="&lt;webctrl id='bt_validar_rg' tag='INPUT' /&gt;" Guid="14e7727b-29aa-48e7-ac13-50f76c28910f" InformativeScreenshot="b2a54f312a430f6b0dc2720d3ff1607f.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/cjUprdxSokalBPsU6B10qg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de RG - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                               </uix:NClick.Target>
@@ -403,7 +596,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NClick>
-                            <uix:NGetText DisplayName="Get Text 'Resposta'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" TextString="[respValidRg]" Version="V4">
+                            <uix:NGetText DisplayName="Get Text 'Resposta'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="454,57" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" TextString="[respValidRg]" Version="V4">
                               <uix:NGetText.Target>
                                 <uix:TargetAnchorable BrowserURL="4devs.com.br/validador_rg" CVScreenId="31bf7b0f-2cc9-4656-9bdf-3fdf5a91b4bd" ContentHash="uoQQtakgAUGXCOxSlUzYVg" CvElementArea="735, 504, 710, 141" CvType="InputBox" DesignTimeRectangle="736, 508, 708, 138" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='texto_resposta' tag='TEXTAREA' type='' class='' aaname='Resposta:            ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4d864975-d50a-4176-8080-d8fad4aa4168" InformativeScreenshot="4759ebbd6fd8480d81edb6a2c3077cc8.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/CX0YMUL3TEqVAA7XjXowQw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de RG - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                   <uix:TargetAnchorable.Anchors>
@@ -420,7 +613,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </uix:NGetText>
-                            <If Condition="[respValidRg.Contains(&quot;False&quot;)]" sap:VirtualizedContainerService.HintSize="486,1842" sap2010:WorkflowViewState.IdRef="If_2">
+                            <If Condition="[respValidRg.Contains(&quot;False&quot;)]" sap:VirtualizedContainerService.HintSize="454,990" sap2010:WorkflowViewState.IdRef="If_2">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -428,24 +621,31 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <If.Then>
-                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="452,269" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="452,108" sap2010:WorkflowViewState.IdRef="Sequence_8">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ currentQueueItem.SpecificContent(&quot;nomeCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;sexoCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;cpfCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;rgCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;marcaVeicCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;anoVeicCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;corVeicCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;veicCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;placaVeicCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;renavamVeicCliente&quot;).ToString,&#xA;    &quot;RG Inválido&quot;}]" DataTable="[dadosCliente]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="418,209" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                                  <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ currentQueueItem.SpecificContent(&quot;nomeCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;sexoCliente&quot;).ToString,currentQueueItem.SpecificContent(&quot;cpfCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;rgCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;marcaVeicCliente&quot;).ToString,currentQueueItem.SpecificContent(&quot;anoVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;corVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;veicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;placaVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;renavamVeicCliente&quot;).ToString,&quot;RG Inválido&quot;}]" DataTable="[dadosCliente]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="418,48" sap2010:WorkflowViewState.IdRef="AddDataRow_5">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:AddDataRow>
                                 </Sequence>
                               </If.Then>
                               <If.Else>
-                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="452,1443" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="452,752" sap2010:WorkflowViewState.IdRef="Sequence_9">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Validador de RENAVAM'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Version="V4">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Validador de RENAVAM'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,57" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Version="V4">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="4devs.com.br/validador_rg" CVScreenId="076437b0-601d-4e34-8c5e-92d5e261175b" ContentHash="09zhnRGVEkebX4nu9ohpsQ" CvElementArea="667, 776, 17, 19" CvTextArea="468, 778, 148, 14" CvTextArgument="Validador de RENAVAM" CvType="ArrowButton" DesignTimeRectangle="460, 772, 228, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Validador de RENAVAM' parentid='top-nav' tag='A' /&gt;" Guid="8cb44972-f0b2-4112-94ef-0c48a6524f76" InformativeScreenshot="8d2395c08b9a13a6055db8d67c55e775.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/xsGechA4O0uWVbdx1Q5ovg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de RG - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                                     </uix:NClick.Target>
@@ -459,8 +659,14 @@
                                         </uix:VerifyExecutionOptions.Timeout>
                                       </uix:VerifyExecutionOptions>
                                     </uix:NClick.VerifyOptions>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
                                   </uix:NClick>
-                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Digite a RENAVAM'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,288" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Text="[currentQueueItem.SpecificContent(&quot;renavamCarro&quot;).ToString]" Version="V4">
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Digite a RENAVAM'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,57" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" Text="[currentQueueItem.SpecificContent(&quot;renavamVeicCliente&quot;).ToString]" Version="V4">
                                     <uix:NTypeInto.Target>
                                       <uix:TargetAnchorable BrowserURL="4devs.com.br/validador_de_renavam" CVScreenId="5c81a08a-f1a8-46e1-bc4c-9a9f12cc89fe" ContentHash="CebSsJwPqEKLMSSNJ9E3dA" CvElementArea="734, 309, 195, 40" CvType="InputBox" DesignTimeRectangle="736, 310, 192, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='txt_renavam' tag='INPUT' type='text' class='' aaname='Digite a RENAVAM:            ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e2166b2b-77a5-4216-8ee0-653f696a2283" InformativeScreenshot="f9bcc6437c7c98a03372822327e1e7ce.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/larj27lSL0C9bXNkN8OgWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador Online de RENAVAM - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                         <uix:TargetAnchorable.Anchors>
@@ -480,8 +686,14 @@
                                         </uix:VerifyExecutionTypeIntoOptions.Timeout>
                                       </uix:VerifyExecutionTypeIntoOptions>
                                     </uix:NTypeInto.VerifyOptions>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
                                   </uix:NTypeInto>
-                                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  bt_validar'" sap:VirtualizedContainerService.HintSize="418,139" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  bt_validar'" sap:VirtualizedContainerService.HintSize="418,57" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
                                     <ui:Click.CursorPosition>
                                       <ui:CursorPosition Position="Center">
                                         <ui:CursorPosition.OffsetX>
@@ -502,6 +714,12 @@
                                         </ui:Target.WaitForReady>
                                       </ui:Target>
                                     </ui:Click.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
                                   </ui:Click>
                                   <uix:NGetText DisplayName="Get Text 'Resposta'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="418,57" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="31ed0b2a-20cd-40fe-8ff3-708f10d2b7f3" TextString="[respValidRenavam]" Version="V4">
                                     <uix:NGetText.Target>
@@ -520,7 +738,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </uix:NGetText>
-                                  <If Condition="[respValidCpf.Contains(&quot;Falso&quot;)]" sap:VirtualizedContainerService.HintSize="418,674" sap2010:WorkflowViewState.IdRef="If_3">
+                                  <If Condition="[respValidCpf.Contains(&quot;Falso&quot;)]" sap:VirtualizedContainerService.HintSize="418,464" sap2010:WorkflowViewState.IdRef="If_3">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -528,23 +746,38 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <If.Then>
-                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,272" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ currentQueueItem.SpecificContent(&quot;nomeCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;sexoCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;cpfCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;rgCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;marcaVeicCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;anoVeicCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;corVeicCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;veicCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;placaVeicCliente&quot;).ToString,&#xA;    currentQueueItem.SpecificContent(&quot;renavamVeicCliente&quot;).ToString,&quot;Renavam Inválido&quot;}]" DataTable="[dadosCliente]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="382,212" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+                                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ currentQueueItem.SpecificContent(&quot;nomeCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;sexoCliente&quot;).ToString,currentQueueItem.SpecificContent(&quot;cpfCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;rgCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;marcaVeicCliente&quot;).ToString,currentQueueItem.SpecificContent(&quot;anoVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;corVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;veicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;placaVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;renavamVeicCliente&quot;).ToString,&quot;Renavam Inválido&quot;}]" DataTable="[dadosCliente]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="AddDataRow_3">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:AddDataRow>
                                       </Sequence>
                                     </If.Then>
                                     <If.Else>
-                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,272" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,226" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ currentQueueItem.SpecificContent(&quot;nomeCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;sexoCliente&quot;).ToString,currentQueueItem.SpecificContent(&quot;cpfCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;rgCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;marcaCarro&quot;).ToString,currentQueueItem.SpecificContent(&quot;anoCarro&quot;).ToString, currentQueueItem.SpecificContent(&quot;corCarro&quot;).ToString, currentQueueItem.SpecificContent(&quot;modeloCarro&quot;).ToString, currentQueueItem.SpecificContent(&quot;placaCarro&quot;).ToString, currentQueueItem.SpecificContent(&quot;renavamCarro&quot;).ToString,&quot;Dados Validados&quot;}]" DataTable="[dadosCliente]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="382,212" sap2010:WorkflowViewState.IdRef="AddDataRow_4" />
+                                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="382,118" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[currentQueueItem.SpecificContent(&quot;nomeCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;sexoCliente&quot;).ToString,currentQueueItem.SpecificContent(&quot;cpfCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;rgCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;marcaVeicCliente&quot;).ToString,currentQueueItem.SpecificContent(&quot;anoVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;corVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;veicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;placaVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;renavamVeicCliente&quot;).ToString,&quot;Dados Validados&quot;]" />
+                                        <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{ currentQueueItem.SpecificContent(&quot;nomeCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;sexoCliente&quot;).ToString,currentQueueItem.SpecificContent(&quot;cpfCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;rgCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;marcaVeicCliente&quot;).ToString,currentQueueItem.SpecificContent(&quot;anoVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;corVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;veicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;placaVeicCliente&quot;).ToString, currentQueueItem.SpecificContent(&quot;renavamVeicCliente&quot;).ToString,&quot;Dados Validados&quot;}]" DataTable="[dadosCliente]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="382,48" sap2010:WorkflowViewState.IdRef="AddDataRow_4">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                        </ui:AddDataRow>
                                       </Sequence>
                                     </If.Else>
                                   </If>
@@ -558,7 +791,7 @@
                   </ActivityAction>
                 </uix:NApplicationCard.Body>
                 <uix:NApplicationCard.TargetApp>
-                  <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="rFRV_NijsEGxLlCTQfoMvw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAABYlAAAWJQFJUiTwAAAEr0lEQVRYR6WWW2xUVRSGdzQmhuiDohBv4A3FK8ZbhHhFeCAx8UEf5UEDVKIhhUIspaX0MtOZlmlrwYjYEqTRcotVBAQvjQoxCFEwoEiEaFvjBUICUZFW7Kf/WXucaXumnc7sZGXmnLP3Xv/617/W3u76GsjHbvA28N3AeaEWo88NepmFycF1NXB1FK7yNi5q366JwpVRGB+yLsxyAiDHN8XgoQQ8Vg+PN8CU5XBjjf1Oa4B76wzUcGxkDUAbKSpFKCdy4ErALQI3z34vi4B7CdwCcBVwV62xkxFENilILhatd8YtYrcUXDE8uxoWtkJdO0Q3w/RGKH4Tlm2AJ5rAVRoIgc4EYkgAWqTF+v9ovVHs5sOUBGzbC7+fIRgnTkHzThgVgY799u6r7+G8argkYiAyaSIjgGt91PfXwcMJi9gtgaat0H3cnGh88yNUbIQ74vZ9/jro67NvK7aCK4Kp9ZlTEQpAaG+Pw/QGo9EVwpwW2Hck5fiXk1D/rk9HEVwaMSduIWzebXOOdJsWxnoWFFQ/X2EaUHndHPOOX4SJcdj6BfzVY5ueOwdb9sC0RnCLwVXBgwm4NeaFWQbPrIKzvTa/fIMJVNoJY2EQAE24wiv91e1w7OdU1AeOQmmbOZHdXWumspRWFKUAuXLYc9jWfPClsTLZl+lAf/0AyLnqW7QtWAdnzqacf9flN58Fk+tgRqNpRM61sZjTb6CFxdD0nq3r+g3GKDWVqd7wv8+wFCSVr2iqNsGhH/qDqG33giwzjcihgMi5tCPRSowzX4OeXuj9GwpabM0jCQOckYGkBSwo2kUwOgJrPoTTfxiIf/pg10F4+hVrOBNjlq6xURNZoINy26PLV0sgVl8NApCug1AA2kiiukc5rTBKn1wBH/sa1zh5Glo7/PdSuK/O1k7SGgl4mfUCjbZPDawY6NcPwlKQDkK/EtkEIfXCK3mrvzC/7YR5ay1qAVaU45XzJdBxwOa8v88YkBCHrYKBJsSiWUAurLaNVSVrP0qV2g45KLTDSbm+QPNKzbGGmFM6pY8JMRNssP9QDKSbFogRCU4NKqC92OpdNL/zuVGsiNv1X2yVGrAhAWTDQLqJDaldFaJykqNx/lk57z5hDtU11cR2H7Ln7XvzSMFAE3oBuSVmbIwS3V50m3ZZWuJvgytIlXDbJzmIcDhLilTVIn1IhIpy7hqY8bKB+skzkshUhvkAkCkdQSoqoagVGrb4JlUCz72eakRzmq2Us25E2ZgYUAouUgrK4LODFu161fxsWL3Dnjt/hdEjacXZmnIZiK8cnloJf/pzo14svAD7j9rzzqEOo1wByPltcaNT0SfrXQ1K5TZzlVGvsXS9vQu9lOQCIHnqTVI/KIHCN8yRRiC2Wan6D07QCrh8iGvZiAHIdDlVo9E98fgpc6bbknseZjdDj49+5TYrv6kNIdHnAkDRq+wkKDk/3GmOdOYHx3BZ6tr29TGbl7yOhUWfUwpkYyIGQJcWRRzcHcvhgeVQ0AxzW/xFtsq0EurcW04ApAEdSOp+svOrrTMme4LeXRyxu+Wgi2i65cpA0nRM6+KhAyb9nRwPKrkwyxdAmKhGankByNv+Y+BfGL82k4PlYhkAAAAASUVORK5CYII=" InformativeScreenshot="a10d7cec92479d83afd7024ab9a58198.jpg" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/_wtgsP9ltUSZ1TmNLYNudg" Selector="&lt;html app='chrome.exe' title='Validador de CPF - 4Devs' /&gt;" Url="https://www.4devs.com.br/validador_cpf" Version="V2" />
+                  <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="C3iCIuqKn0iy2G9ihCHALA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAABYlAAAWJQFJUiTwAAAEr0lEQVRYR6WWW2xUVRSGdzQmhuiDohBv4A3FK8ZbhHhFeCAx8UEf5UEDVKIhhUIspaX0MtOZlmlrwYjYEqTRcotVBAQvjQoxCFEwoEiEaFvjBUICUZFW7Kf/WXucaXumnc7sZGXmnLP3Xv/617/W3u76GsjHbvA28N3AeaEWo88NepmFycF1NXB1FK7yNi5q366JwpVRGB+yLsxyAiDHN8XgoQQ8Vg+PN8CU5XBjjf1Oa4B76wzUcGxkDUAbKSpFKCdy4ErALQI3z34vi4B7CdwCcBVwV62xkxFENilILhatd8YtYrcUXDE8uxoWtkJdO0Q3w/RGKH4Tlm2AJ5rAVRoIgc4EYkgAWqTF+v9ovVHs5sOUBGzbC7+fIRgnTkHzThgVgY799u6r7+G8argkYiAyaSIjgGt91PfXwcMJi9gtgaat0H3cnGh88yNUbIQ74vZ9/jro67NvK7aCK4Kp9ZlTEQpAaG+Pw/QGo9EVwpwW2Hck5fiXk1D/rk9HEVwaMSduIWzebXOOdJsWxnoWFFQ/X2EaUHndHPOOX4SJcdj6BfzVY5ueOwdb9sC0RnCLwVXBgwm4NeaFWQbPrIKzvTa/fIMJVNoJY2EQAE24wiv91e1w7OdU1AeOQmmbOZHdXWumspRWFKUAuXLYc9jWfPClsTLZl+lAf/0AyLnqW7QtWAdnzqacf9flN58Fk+tgRqNpRM61sZjTb6CFxdD0nq3r+g3GKDWVqd7wv8+wFCSVr2iqNsGhH/qDqG33giwzjcihgMi5tCPRSowzX4OeXuj9GwpabM0jCQOckYGkBSwo2kUwOgJrPoTTfxiIf/pg10F4+hVrOBNjlq6xURNZoINy26PLV0sgVl8NApCug1AA2kiiukc5rTBKn1wBH/sa1zh5Glo7/PdSuK/O1k7SGgl4mfUCjbZPDawY6NcPwlKQDkK/EtkEIfXCK3mrvzC/7YR5ay1qAVaU45XzJdBxwOa8v88YkBCHrYKBJsSiWUAurLaNVSVrP0qV2g45KLTDSbm+QPNKzbGGmFM6pY8JMRNssP9QDKSbFogRCU4NKqC92OpdNL/zuVGsiNv1X2yVGrAhAWTDQLqJDaldFaJykqNx/lk57z5hDtU11cR2H7Ln7XvzSMFAE3oBuSVmbIwS3V50m3ZZWuJvgytIlXDbJzmIcDhLilTVIn1IhIpy7hqY8bKB+skzkshUhvkAkCkdQSoqoagVGrb4JlUCz72eakRzmq2Us25E2ZgYUAouUgrK4LODFu161fxsWL3Dnjt/hdEjacXZmnIZiK8cnloJf/pzo14svAD7j9rzzqEOo1wByPltcaNT0SfrXQ1K5TZzlVGvsXS9vQu9lOQCIHnqTVI/KIHCN8yRRiC2Wan6D07QCrh8iGvZiAHIdDlVo9E98fgpc6bbknseZjdDj49+5TYrv6kNIdHnAkDRq+wkKDk/3GmOdOYHx3BZ6tr29TGbl7yOhUWfUwpkYyIGQJcWRRzcHcvhgeVQ0AxzW/xFtsq0EurcW04ApAEdSOp+svOrrTMme4LeXRyxu+Wgi2i65cpA0nRM6+KhAyb9nRwPKrkwyxdAmKhGankByNv+Y+BfGL82k4PlYhkAAAAASUVORK5CYII=" InformativeScreenshot="e310416e0c3f8b9cf590ec09c24b6ef9.jpg" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/_wtgsP9ltUSZ1TmNLYNudg" Selector="&lt;html app='chrome.exe' title='Validador de CPF - 4Devs' /&gt;" Url="https://www.4devs.com.br/validador_cpf" Version="V2" />
                 </uix:NApplicationCard.TargetApp>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -567,15 +800,20 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </uix:NApplicationCard>
-              <ui:SetTransactionStatus ContinueOnError="{x:Null}" FolderPath="{x:Null}" Reason="{x:Null}" ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Set Transaction Status" ErrorType="Business" sap:VirtualizedContainerService.HintSize="590,174" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_1" Status="Successful" TransactionItem="[currentQueueItem]">
+              <ui:SetTransactionStatus ContinueOnError="{x:Null}" FolderPath="{x:Null}" Reason="{x:Null}" ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Set Transaction Status" ErrorType="Business" sap:VirtualizedContainerService.HintSize="484,48" sap2010:WorkflowViewState.IdRef="SetTransactionStatus_1" Status="Successful" TransactionItem="[currentQueueItem]">
                 <ui:SetTransactionStatus.Analytics>
                   <scg:Dictionary x:TypeArguments="x:String, InArgument" />
                 </ui:SetTransactionStatus.Analytics>
                 <ui:SetTransactionStatus.Output>
                   <scg:Dictionary x:TypeArguments="x:String, InArgument" />
                 </ui:SetTransactionStatus.Output>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
               </ui:SetTransactionStatus>
-              <ui:SetTransactionProgress FolderPath="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Set Transaction Progress" sap:VirtualizedContainerService.HintSize="590,166" sap2010:WorkflowViewState.IdRef="SetTransactionProgress_1" Progress="[respValidCpf &amp; &quot; | &quot; &amp; respValidRg &amp; &quot; | &quot; &amp; respValidRenavam]" TransactionItem="[currentQueueItem]" />
             </Sequence>
           </ActivityAction>
         </ui:ForEach.Body>
@@ -586,7 +824,14 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:ForEach>
-      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="False" DataTable="[dadosCliente]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="626,139" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Dados" WorkbookPath="dados.validados" />
+      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="False" DataTable="[dadosCliente]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="520,48" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Dados" WorkbookPath="dados.validados">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:WriteRange>
     </Sequence>
   </Sequence>
 </Activity>

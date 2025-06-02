@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Gerar RG",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "gltDw5gfvUKu_72weOv_Wg",
+  "Reference": "ZEXXzmRlEE-OL1ynQQKEvQ/gltDw5gfvUKu_72weOv_Wg",
+  "ParentRef": "ZEXXzmRlEE-OL1ynQQKEvQ/2JYGNHDjGUOisGL0gWOngA",
+  "Created": "2025-06-02T13:19:15.6068735Z",
+  "Updated": "2025-06-02T13:19:15.6068735Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

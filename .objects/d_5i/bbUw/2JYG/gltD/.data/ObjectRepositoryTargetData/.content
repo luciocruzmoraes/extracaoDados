@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FbQMXL6xvkCxO7rfoF7gew" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/gerador_de_rg" CVScreenId="85e27d6b-973c-4e7b-8817-a47e385ee447" CvElementArea="1012, 421, 154, 53" CvType="Button" DesignTimeRectangle="1014, 424, 151, 46" ElementType="Button" FullSelectorArgument="&lt;webctrl id='bt_gerar_rg' tag='INPUT' /&gt;" Guid="8c749aaa-79df-4796-9355-5acdab4ee582" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de RG - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="fae3b61739a41d1d16ce97466d5deb30.png" xmlns="">0ZYKi9_U2L0uu6DKbEWkUNg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

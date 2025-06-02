@@ -61,6 +61,8 @@
       <x:String>UiPath.Platform.Triggers</x:String>
       <x:String>UiPath.Platform.Triggers.Scope</x:String>
       <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.CSV</x:String>
+      <x:String>UiPath.CSV.Activities</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -128,7 +130,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1118,6242" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="1003,5348" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dadosCliente" />
       <Variable x:TypeArguments="x:String" Name="nomeCliente" />
@@ -148,9 +150,9 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="590,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
-    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="590,88" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
-    <ui:BuildDataTable DataTable="[dadosCliente]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="590,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;nomeCliente&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;sexoCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;cpfCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;rgCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;marcaVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;anoVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;corVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;veicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;placaVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;renavamVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
+    <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="554,173" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
+    <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="554,88" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
+    <ui:BuildDataTable DataTable="[dadosCliente]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="554,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;nomeCliente&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;sexoCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;cpfCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;rgCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;marcaVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;anoVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;corVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;veicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;placaVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;renavamVeicCliente&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Status&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -158,33 +160,34 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:BuildDataTable>
-    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="590,5794" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
+    <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[dadosCliente.RowCount &lt; 11]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="554,4900" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_3">
       <ui:InterruptibleDoWhile.Body>
-        <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="588,5673" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="552,4779" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="554,5223" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0ab3ec4d-4a24-41b4-ab30-443f454226a3">
+          <uix:NApplicationCard DisplayName="Browser" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="518,4143" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="0ab3ec4d-4a24-41b4-ab30-443f454226a3">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="520,4974" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="484,3854" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="486,1497" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_4">
+                  <ui:InterruptibleDoWhile CurrentIndex="{x:Null}" Condition="[dadosCliente.RowCount &lt; 6]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="486,4762" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_4">
                     <ui:InterruptibleDoWhile.Body>
-                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="484,1367" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="484,4664" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /gerador_de_nomes'" sap:VirtualizedContainerService.HintSize="450,139" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
@@ -211,10 +214,10 @@
                         </ui:Click>
                         <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '2. Escolha o Gênero'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" Version="V4">
                           <uix:NClick.Target>
-                            <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_nomes" CVScreenId="f1c5db2d-c189-4223-8124-215ed2ad2211" ContentHash="moeitGom0U6B0T4zeJxcGw" CvElementArea="284, 737, 109, 40" CvType="InputBox" DesignTimeRectangle="285, 738, 106, 37" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='gender' tag='SELECT' type='' class='' aaname='2. Escolha o Gênero:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="530fb5e9-a7d4-4a0c-a5e7-e127a4df5de0" InformativeScreenshot="6eab4460164528e5783d3d568356c645.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/xyDOanWsbEin2aVbcmsbPA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de Nomes - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_rg" CVScreenId="fd0ba9ad-cb2c-4aef-8216-bd72b2f63abb" ContentHash="3R5Mn1KTpUG5Tmeu5NqpCA" CvElementArea="742, 439, 109, 40" CvType="InputBox" DesignTimeRectangle="744, 440, 106, 37" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='gender' tag='SELECT' type='' class='' aaname='2. Escolha o Gênero:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="37cf0279-bf47-40f4-bc3f-27c3befc40fe" InformativeScreenshot="90c7751f03447f7235b5ec1370e0fec5.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/xyDOanWsbEin2aVbcmsbPA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de Nomes - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                               <uix:TargetAnchorable.Anchors>
-                                <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                  <uix:Target CVScreenId="f1c5db2d-c189-4223-8124-215ed2ad2211" CvTextArea="268, 718, 138, 15" CvTextArgument="2. Escolha O Gênero:" CvType="Text" DesignTimeRectangle="270, 719, 640, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='2. Escolha o Gênero:' tag='LABEL' type='' class='input-subtitle' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='2. Escolha o Gênero:' /&gt;" Guid="1ead8bf8-7c7f-4247-bbdd-6d6bba56483b" SearchSteps="FuzzySelector, CV" />
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="fd0ba9ad-cb2c-4aef-8216-bd72b2f63abb" CvTextArea="727, 420, 138, 15" CvTextArgument="2. Escolha O Gênero:" CvType="Text" DesignTimeRectangle="729, 421, 333, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='2. Escolha o Gênero:' tag='LABEL' type='' class='input-subtitle' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='2. Escolha o Gênero:' /&gt;" Guid="092b3291-e859-4527-857f-99dfe0a49fe0" SearchSteps="FuzzySelector, CV" />
                                 </scg:List>
                               </uix:TargetAnchorable.Anchors>
                             </uix:TargetAnchorable>
@@ -230,7 +233,7 @@
                             </uix:VerifyExecutionOptions>
                           </uix:NClick.VerifyOptions>
                         </uix:NClick>
-                        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'SELECT  gender'" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="down" KeyModifiers="None" SpecialKey="True">
+                        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'SELECT  gender'" sap:VirtualizedContainerService.HintSize="450,185" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="down" KeyModifiers="None" SpecialKey="True">
                           <ui:SendHotkey.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8dc45dc7-2d8f-42cd-844f-8eb26be403b9" InformativeScreenshot="8472ea00ff4574dd0e6b697fa5fc8c1a" Selector="&lt;webctrl id='gender' tag='SELECT' /&gt;">
                               <ui:Target.TimeoutMS>
@@ -242,7 +245,7 @@
                             </ui:Target>
                           </ui:SendHotkey.Target>
                         </ui:SendHotkey>
-                        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'SELECT  gender'" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
+                        <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'SELECT  gender'" sap:VirtualizedContainerService.HintSize="450,185" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
                           <ui:SendHotkey.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d5b87e30-73a3-41ef-985c-f49bbf516a0f" InformativeScreenshot="8472ea00ff4574dd0e6b697fa5fc8c1a" Selector="&lt;webctrl id='gender' tag='SELECT' /&gt;">
                               <ui:Target.TimeoutMS>
@@ -283,19 +286,19 @@
                         </uix:NGetText>
                         <uix:NGetText DisplayName="Get Text '2. Escolha o Gênero'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,189" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" TextString="[sexoCliente]" Version="V4">
                           <uix:NGetText.Target>
-                            <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_nomes" CVScreenId="f1c5db2d-c189-4223-8124-215ed2ad2211" ContentHash="moeitGom0U6B0T4zeJxcGw" CvElementArea="284, 737, 109, 40" CvType="InputBox" DesignTimeRectangle="285, 738, 106, 37" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='gender' tag='SELECT' type='' class='' aaname='2. Escolha o Gênero:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="530fb5e9-a7d4-4a0c-a5e7-e127a4df5de0" InformativeScreenshot="6eab4460164528e5783d3d568356c645.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/xyDOanWsbEin2aVbcmsbPA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de Nomes - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                            <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_rg" CVScreenId="fd0ba9ad-cb2c-4aef-8216-bd72b2f63abb" ContentHash="3R5Mn1KTpUG5Tmeu5NqpCA" CvElementArea="742, 439, 109, 40" CvType="InputBox" DesignTimeRectangle="744, 440, 106, 37" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='gender' tag='SELECT' type='' class='' aaname='2. Escolha o Gênero:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="37cf0279-bf47-40f4-bc3f-27c3befc40fe" InformativeScreenshot="90c7751f03447f7235b5ec1370e0fec5.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/xyDOanWsbEin2aVbcmsbPA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de Nomes - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                               <uix:TargetAnchorable.Anchors>
                                 <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                  <uix:Target CVScreenId="f1c5db2d-c189-4223-8124-215ed2ad2211" CvTextArea="268, 718, 138, 15" CvTextArgument="2. Escolha O Gênero:" CvType="Text" DesignTimeRectangle="270, 719, 640, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='2. Escolha o Gênero:' tag='LABEL' type='' class='input-subtitle' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='2. Escolha o Gênero:' /&gt;" Guid="1ead8bf8-7c7f-4247-bbdd-6d6bba56483b" SearchSteps="FuzzySelector, CV" />
+                                  <uix:Target CVScreenId="fd0ba9ad-cb2c-4aef-8216-bd72b2f63abb" CvTextArea="727, 420, 138, 15" CvTextArgument="2. Escolha O Gênero:" CvType="Text" DesignTimeRectangle="729, 421, 333, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='2. Escolha o Gênero:' tag='LABEL' type='' class='input-subtitle' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='2. Escolha o Gênero:' /&gt;" Guid="092b3291-e859-4527-857f-99dfe0a49fe0" SearchSteps="FuzzySelector, CV" />
                                 </scg:List>
                               </uix:TargetAnchorable.Anchors>
                             </uix:TargetAnchorable>
                           </uix:NGetText.Target>
                         </uix:NGetText>
-                        <Sequence sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <Sequence sap:VirtualizedContainerService.HintSize="450,3353" sap2010:WorkflowViewState.IdRef="Sequence_7">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -327,7 +330,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:Click>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '1. Gerar com pontuação?'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" Version="V4">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '1. Gerar com pontuação?'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" Version="V4">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_cpf" CVScreenId="e17b5df4-8ee0-491c-9226-b46751aef39b" ContentHash="cBSZJbdJck27XpO0raiFcQ" CvElementArea="855, 358, 21, 21" CvTextArea="880, 360, 30, 15" CvTextArgument="Não" CvType="RadioButton" DesignTimeRectangle="858, 356, 62, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Não ' tag='LABEL' /&gt;" Guid="eb481b32-a31f-468c-9855-be80a9097f85" InformativeScreenshot="f738b45434981c4a7bf1e48a3573c010.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/sP1fxbPqjkikwWkTweAydQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de CPF - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                 <uix:TargetAnchorable.Anchors>
@@ -415,11 +418,11 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:Click>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Radiobutton'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" Version="V4">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Radiobutton'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" Version="V4">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="4devs.com.br/validador_de_renavam" CVScreenId="1e6c97c2-d878-4d55-8dd7-4dafe4136074" ContentHash="LXDrwccrRkqan4w4thvGNQ" CvElementArea="825, 333, 21, 22" CvTextArea="850, 335, 30, 15" CvTextArgument="Não" CvType="RadioButton" DesignTimeRectangle="828, 331, 62, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Não ' tag='LABEL' /&gt;" Guid="9ae587da-f531-4fa0-8242-9f70a682e5d7" InformativeScreenshot="e8169595e4915b7a467a11a26ce7d9ec.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/sT2sQUwwc0WVdBniC4vbFA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de RG - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target CVScreenId="1e6c97c2-d878-4d55-8dd7-4dafe4136074" CvTextArea="728, 305, 169, 18" CvTextArgument="1. Gerar com Pontuação?" CvType="Text" DesignTimeRectangle="729, 302, 348, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='input-subtitle' parentid='app-wrapper' tag='DIV' type='' aaname='1. Gerar com Pontuação?' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1. Gerar com Pontuação?' /&gt;" Guid="f9f397b1-5543-4607-a589-062645c1706e" SearchSteps="FuzzySelector, CV" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
@@ -468,7 +471,7 @@
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_rg" CVScreenId="6091deb9-dd3f-4ffb-939c-370fc3546e8d" ContentHash="q54-Tyg-rUuL3sKbhReX3Q" CvElementArea="270, 587, 652, 61" CvType="InputBox" DesignTimeRectangle="270, 588, 655, 60" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='texto_rg' tag='TEXTAREA' type='' class='output-txt' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8b154f5f-c4d8-4e81-b1fd-16f318307aea" InformativeScreenshot="23524a8aa68cb04ea3279fb5c882d95a.png" IsResponsive="True" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/4a_vTJvipku4hxFuMJ4ZWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de RG - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target CVScreenId="6091deb9-dd3f-4ffb-939c-370fc3546e8d" CvTextArea="269, 568, 69, 18" CvTextArgument="Resposta:" CvType="Text" DesignTimeRectangle="270, 567, 655, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='output-subtitle' parentid='area_resposta' tag='DIV' type='' aaname='Resposta:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Resposta:' /&gt;" Guid="0b880a33-4de9-41c6-88c2-8c36cda52cc5" SearchSteps="FuzzySelector, CV" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
@@ -481,6 +484,24 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NGetText>
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                            <ui:CommentOut.Body>
+                              <Sequence DisplayName="Atividades Ignoradas" sap:VirtualizedContainerService.HintSize="450,168" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:02:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,108" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[rgCliente]" />
+                              </Sequence>
+                            </ui:CommentOut.Body>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </ui:CommentOut>
                           <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /gerador_de_veiculos'" sap:VirtualizedContainerService.HintSize="416,139" sap2010:WorkflowViewState.IdRef="Click_19" KeyModifiers="None" MouseButton="BTN_LEFT">
                             <ui:Click.CursorPosition>
                               <ui:CursorPosition Position="Center">
@@ -529,7 +550,7 @@
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_veiculos" CVScreenId="cd0bd7cf-0ffa-4aa0-b104-c8bf8d3e5bf2" ContentHash="R-XIdR252EGHwYYTdmCnJw" CvElementArea="430, 639, 227, 38" CvType="InputBox" DesignTimeRectangle="432, 640, 223, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='marca' tag='INPUT' type='text' class='margem_menor' aaname='Marca' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e2078123-e6c0-4d09-a9c1-c0d157a5edcd" InformativeScreenshot="5e050d4c518543bd994412c2ab5cc610.png" IsResponsive="True" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/8TuJ6RPdsEqncxylgvzyLQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador Online de Veículos - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target CVScreenId="cd0bd7cf-0ffa-4aa0-b104-c8bf8d3e5bf2" CvTextArea="374, 642, 56, 15" CvTextArgument="Marca:" CvType="Text" DesignTimeRectangle="375, 639, 55, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='area_resposta' tag='STRONG' type='' class='' aaname='Marca:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Marca:' /&gt;" Guid="a088e15d-d041-4819-bd73-c701fca4738c" SearchSteps="FuzzySelector, CV" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
@@ -540,7 +561,7 @@
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_veiculos" CVScreenId="cd0bd7cf-0ffa-4aa0-b104-c8bf8d3e5bf2" ContentHash="n4cbTsvQgUegToC0CKSalA" CvElementArea="430, 680, 338, 39" CvType="InputBox" DesignTimeRectangle="432, 681, 335, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='modelo' tag='INPUT' type='text' class='margem_menor' aaname='Modelo' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ece07eff-964f-4b23-8908-03b3b372fdbe" InformativeScreenshot="356d956650e86b6e714470077ee1c295.png" IsResponsive="True" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/Fw7Ybsfc7UCRZtIEBRW4vw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador Online de Veículos - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target CVScreenId="cd0bd7cf-0ffa-4aa0-b104-c8bf8d3e5bf2" CvTextArea="365, 682, 65, 16" CvTextArgument="Modelo:" CvType="Text" DesignTimeRectangle="366, 680, 64, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='area_resposta' tag='STRONG' class='' aaname='Modelo:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Modelo:' /&gt;" Guid="04b1cea9-1b45-408a-baeb-8e0cef36bcd5" SearchSteps="FuzzySelector, CV" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
@@ -551,7 +572,7 @@
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_veiculos" CVScreenId="cd0bd7cf-0ffa-4aa0-b104-c8bf8d3e5bf2" ContentHash="SSWfsEVt30umTJwLyqbaqQ" CvElementArea="430, 721, 113, 38" CvType="InputBox" DesignTimeRectangle="432, 722, 111, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='ano' tag='INPUT' type='text' class='margem_menor' aaname='Ano do Veículo' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="129f8eb3-0b2c-4887-8913-ca521f2c4523" InformativeScreenshot="8101ae8250bb43bb651096904b1eab2f.png" IsResponsive="True" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/b0gkTNyTvkymK733Gq6TCg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador Online de Veículos - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target CVScreenId="cd0bd7cf-0ffa-4aa0-b104-c8bf8d3e5bf2" CvTextArea="391, 724, 39, 15" CvTextArgument="Ano:" CvType="Text" DesignTimeRectangle="394, 721, 36, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='area_resposta' tag='STRONG' class='' aaname='Ano:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Ano:' /&gt;" Guid="755c1eab-26a7-483d-94ee-7cc10233f1c9" SearchSteps="FuzzySelector, CV" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
@@ -562,7 +583,7 @@
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_veiculos" CVScreenId="cd0bd7cf-0ffa-4aa0-b104-c8bf8d3e5bf2" ContentHash="BpPHZQI4Mk-VAj0QVeLGkg" CvElementArea="430, 762, 170, 38" CvType="InputBox" DesignTimeRectangle="432, 763, 167, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='renavam' tag='INPUT' type='text' class='margem_menor' aaname='Renavam' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c659b35c-404a-47ba-a28e-cbbc97c9799e" InformativeScreenshot="0d58b8186f82e121f198777ba746c467.png" IsResponsive="True" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/YdTut6HfV06E1Rw1ad5MPA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador Online de Veículos - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target CVScreenId="cd0bd7cf-0ffa-4aa0-b104-c8bf8d3e5bf2" CvTextArea="344, 765, 86, 15" CvTextArgument="RENAVAM:" CvType="Text" DesignTimeRectangle="345, 762, 85, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='area_resposta' tag='STRONG' class='' aaname='RENAVAM:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='RENAVAM:' /&gt;" Guid="a957c2ca-c729-465d-9d76-69a61d89e362" SearchSteps="FuzzySelector, CV" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
@@ -573,7 +594,7 @@
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_veiculos" CVScreenId="31dab0d8-d196-448b-a726-88aaa720ed45" ContentHash="UO0J_004QECjaiIY6nnTVg" CvElementArea="430, 803, 114, 38" CvType="InputBox" DesignTimeRectangle="432, 804, 111, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='placa_veiculo' tag='INPUT' type='text' class='margem_menor' aaname='Placa do Veículo' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2363497a-6a0b-4edf-ae24-0772cc8dddd4" InformativeScreenshot="9d2232416ebc7d12669cae393b1865f0.png" IsResponsive="True" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/ixNZGA2maUiJOLLtYSvlZw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador Online de Veículos - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target CVScreenId="31dab0d8-d196-448b-a726-88aaa720ed45" CvTextArea="382, 806, 47, 15" CvTextArgument="Placa:" CvType="Text" DesignTimeRectangle="383, 803, 47, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='area_resposta' tag='STRONG' class='' aaname='Placa:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Placa:' /&gt;" Guid="64a47794-f159-4374-9a94-394f8889ecbd" SearchSteps="FuzzySelector, CV" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
@@ -584,29 +605,27 @@
                             <uix:NGetText.Target>
                               <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_veiculos" CVScreenId="31dab0d8-d196-448b-a726-88aaa720ed45" ContentHash="H4TvPuW_YU-C26Yl2kOOJQ" CvElementArea="430, 844, 114, 39" CvType="InputBox" DesignTimeRectangle="432, 845, 111, 37" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='cor' tag='INPUT' type='text' class='margem_menor' aaname='Cor' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c822f72f-fe33-4e41-9dd5-c272f481ff75" InformativeScreenshot="c06aee3c29f47aecbf3e1c7cc3cd3512.png" IsResponsive="True" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/1Jgp6dG78U-X11K0bO7OzQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador Online de Veículos - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                                 <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                     <uix:Target CVScreenId="31dab0d8-d196-448b-a726-88aaa720ed45" CvTextArea="397, 847, 33, 15" CvTextArgument="Cor:" CvType="Text" DesignTimeRectangle="398, 844, 32, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='area_resposta' tag='STRONG' class='' aaname='Cor:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Cor:' /&gt;" Guid="7654b77f-d2fe-4b05-b512-d28dd35b1fe9" SearchSteps="FuzzySelector, CV" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
                               </uix:TargetAnchorable>
                             </uix:NGetText.Target>
                           </uix:NGetText>
-                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[{nomeCliente,sexoCliente, cpfCliente,rgCliente,marcaCarro, anoCarro, corCarro, modeloCarro, placaCarro, renavamCarro}]" />
-                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{nomeCliente,sexoCliente, rgCliente,marcaCarro, anoCarro, corCarro, modeloCarro, placaCarro, renavamCarro}]" DataTable="[dadosCliente]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,209" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
+                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,117" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[New With { .nomeCliente = nomeCliente, .sexoCliente = sexoCliente, .cpfCliente = cpfCliente, .rgCliente = rgCliente, .marcaCarro = marcaCarro, .anoCarro = anoCarro, .corCarro = corCarro, .modeloCarro = modeloCarro, .placaCarro = placaCarro, .renavamCarro = renavamCarro }]" />
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[{nomeCliente,sexoCliente, cpfCliente,rgCliente,marcaCarro, anoCarro, corCarro, modeloCarro, placaCarro, renavamCarro}]" />
+                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{nomeCliente, sexoCliente, cpfCliente, rgCliente, marcaCarro, anoCarro, corCarro, modeloCarro, placaCarro, renavamCarro}]" DataTable="[dadosCliente]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,209" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
                         </Sequence>
                       </Sequence>
                     </ui:InterruptibleDoWhile.Body>
-                    <ui:InterruptibleDoWhile.Condition>
-                      <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="dadosCliente.RowCount &lt; 6" />
-                    </ui:InterruptibleDoWhile.Condition>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InterruptibleDoWhile>
-                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /gerador_de_nomes'" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /gerador_de_nomes'" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
@@ -634,7 +653,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:Click>
-                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  bt-gerar-nome'" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'INPUT  bt-gerar-nome'" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
@@ -662,7 +681,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:Click>
-                  <uix:NGetText DisplayName="Get Text 'Lofa'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NGetText_26" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" TextString="[nomeCliente]" Version="V4">
+                  <uix:NGetText DisplayName="Get Text 'Lofa'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NGetText_26" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" TextString="[nomeCliente]" Version="V4">
                     <uix:NGetText.Target>
                       <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_nomes" CVScreenId="1b4abc18-0587-4fa0-930d-5d67dfd0167c" ContentHash="It5MV3skIkeoEqCaFTaisQ" CvElementArea="271, 684, 215, 49" CvType="Button" DesignTimeRectangle="284, 686, 190, 45" FullSelectorArgument="&lt;webctrl parentid='nicks' tag='SPAN' /&gt;" Guid="2eb0fc05-fb74-4551-a8ca-ba79868c6c31" InformativeScreenshot="496416f570b0e82b2cf3ff26544f0360.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/P3if_AtLZ0SbYhMa4B1IKQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de Nomes - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
                     </uix:NGetText.Target>
@@ -673,12 +692,12 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NGetText>
-                  <uix:NGetText DisplayName="Get Text '2. Escolha o Gênero'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="NGetText_27" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" TextString="[sexoCliente]" Version="V4">
+                  <uix:NGetText DisplayName="Get Text '2. Escolha o Gênero'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="NGetText_27" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" TextString="[sexoCliente]" Version="V4">
                     <uix:NGetText.Target>
-                      <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_nomes" CVScreenId="f1c5db2d-c189-4223-8124-215ed2ad2211" ContentHash="moeitGom0U6B0T4zeJxcGw" CvElementArea="284, 737, 109, 40" CvType="InputBox" DesignTimeRectangle="285, 738, 106, 37" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='gender' tag='SELECT' type='' class='' aaname='2. Escolha o Gênero:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="530fb5e9-a7d4-4a0c-a5e7-e127a4df5de0" InformativeScreenshot="6eab4460164528e5783d3d568356c645.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/xyDOanWsbEin2aVbcmsbPA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de Nomes - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+                      <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_rg" CVScreenId="fd0ba9ad-cb2c-4aef-8216-bd72b2f63abb" ContentHash="3R5Mn1KTpUG5Tmeu5NqpCA" CvElementArea="742, 439, 109, 40" CvType="InputBox" DesignTimeRectangle="744, 440, 106, 37" ElementType="DropDown" FuzzySelectorArgument="&lt;webctrl id='gender' tag='SELECT' type='' class='' aaname='2. Escolha o Gênero:' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="37cf0279-bf47-40f4-bc3f-27c3befc40fe" InformativeScreenshot="90c7751f03447f7235b5ec1370e0fec5.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/xyDOanWsbEin2aVbcmsbPA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de Nomes - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                         <uix:TargetAnchorable.Anchors>
                           <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                            <uix:Target CVScreenId="f1c5db2d-c189-4223-8124-215ed2ad2211" CvTextArea="268, 718, 138, 15" CvTextArgument="2. Escolha O Gênero:" CvType="Text" DesignTimeRectangle="270, 719, 640, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='2. Escolha o Gênero:' tag='LABEL' type='' class='input-subtitle' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='2. Escolha o Gênero:' /&gt;" Guid="1ead8bf8-7c7f-4247-bbdd-6d6bba56483b" SearchSteps="FuzzySelector, CV" />
+                            <uix:Target CVScreenId="fd0ba9ad-cb2c-4aef-8216-bd72b2f63abb" CvTextArea="727, 420, 138, 15" CvTextArgument="2. Escolha O Gênero:" CvType="Text" DesignTimeRectangle="729, 421, 333, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='2. Escolha o Gênero:' tag='LABEL' type='' class='input-subtitle' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='2. Escolha o Gênero:' /&gt;" Guid="092b3291-e859-4527-857f-99dfe0a49fe0" SearchSteps="FuzzySelector, CV" />
                           </scg:List>
                         </uix:TargetAnchorable.Anchors>
                       </uix:TargetAnchorable>
@@ -690,7 +709,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NGetText>
-                  <Sequence sap:VirtualizedContainerService.HintSize="486,3187" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                  <Sequence sap:VirtualizedContainerService.HintSize="450,3507" sap2010:WorkflowViewState.IdRef="Sequence_13">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -725,7 +744,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:Click>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '1. Gerar com pontuação?'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '1. Gerar com pontuação?'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" Version="V4">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_cpf" CVScreenId="e17b5df4-8ee0-491c-9226-b46751aef39b" ContentHash="cBSZJbdJck27XpO0raiFcQ" CvElementArea="855, 358, 21, 21" CvTextArea="880, 360, 30, 15" CvTextArgument="Não" CvType="RadioButton" DesignTimeRectangle="858, 356, 62, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Não ' tag='LABEL' /&gt;" Guid="eb481b32-a31f-468c-9855-be80a9097f85" InformativeScreenshot="f738b45434981c4a7bf1e48a3573c010.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/sP1fxbPqjkikwWkTweAydQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de CPF - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                           <uix:TargetAnchorable.Anchors>
@@ -813,7 +832,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:Click>
-                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Radiobutton'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Radiobutton'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" Version="V4">
                       <uix:NClick.Target>
                         <uix:TargetAnchorable BrowserURL="4devs.com.br/validador_de_renavam" CVScreenId="1e6c97c2-d878-4d55-8dd7-4dafe4136074" ContentHash="LXDrwccrRkqan4w4thvGNQ" CvElementArea="825, 333, 21, 22" CvTextArea="850, 335, 30, 15" CvTextArgument="Não" CvType="RadioButton" DesignTimeRectangle="828, 331, 62, 21" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Não ' tag='LABEL' /&gt;" Guid="9ae587da-f531-4fa0-8242-9f70a682e5d7" InformativeScreenshot="e8169595e4915b7a467a11a26ce7d9ec.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/sT2sQUwwc0WVdBniC4vbFA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de RG - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                           <uix:TargetAnchorable.Anchors>
@@ -834,35 +853,23 @@
                         </uix:VerifyExecutionOptions>
                       </uix:NClick.VerifyOptions>
                     </uix:NClick>
-                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /gerador_de_rg'" sap:VirtualizedContainerService.HintSize="416,139" sap2010:WorkflowViewState.IdRef="Click_37" KeyModifiers="None" MouseButton="BTN_LEFT">
-                      <ui:Click.CursorPosition>
-                        <ui:CursorPosition Position="Center">
-                          <ui:CursorPosition.OffsetX>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:CursorPosition.OffsetX>
-                          <ui:CursorPosition.OffsetY>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:CursorPosition.OffsetY>
-                        </ui:CursorPosition>
-                      </ui:Click.CursorPosition>
-                      <ui:Click.Target>
-                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="c2b8e569-dc4a-47b6-9a1c-78013b259ceb" InformativeScreenshot="00e3ba61fc9903ba2c723eb5a25d3508" Selector="&lt;webctrl id='bt_gerar_rg' tag='INPUT' /&gt;">
-                          <ui:Target.TimeoutMS>
-                            <InArgument x:TypeArguments="x:Int32" />
-                          </ui:Target.TimeoutMS>
-                          <ui:Target.WaitForReady>
-                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                          </ui:Target.WaitForReady>
-                        </ui:Target>
-                      </ui:Click.Target>
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                    </ui:Click>
-                    <uix:NGetText DisplayName="Get Text 'Resposta'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_45" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" TextString="[rgCliente]" Version="V4">
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Gerar RG'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,225" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" Version="V4">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_rg" CVScreenId="85e27d6b-973c-4e7b-8817-a47e385ee447" ContentHash="FbQMXL6xvkCxO7rfoF7gew" CvElementArea="1012, 421, 154, 53" CvType="Button" DesignTimeRectangle="1014, 424, 151, 46" ElementType="Button" FullSelectorArgument="&lt;webctrl id='bt_gerar_rg' tag='INPUT' /&gt;" Guid="8c749aaa-79df-4796-9355-5acdab4ee582" InformativeScreenshot="fae3b61739a41d1d16ce97466d5deb30.png" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/gltDw5gfvUKu_72weOv_Wg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de RG - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:02" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,117" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[rgCliente]" />
+                    <uix:NGetText DelayBefore="[TimeSpan.Parse(&quot;00:00:03&quot;).TotalSeconds]" DisplayName="Get Text 'Resposta'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NGetText_45" ScopeIdentifier="0ab3ec4d-4a24-41b4-ab30-443f454226a3" TextString="[rgCliente]" Version="V4">
                       <uix:NGetText.Target>
                         <uix:TargetAnchorable BrowserURL="4devs.com.br/gerador_de_rg" CVScreenId="6091deb9-dd3f-4ffb-939c-370fc3546e8d" ContentHash="q54-Tyg-rUuL3sKbhReX3Q" CvElementArea="270, 587, 652, 61" CvType="InputBox" DesignTimeRectangle="270, 588, 655, 60" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='texto_rg' tag='TEXTAREA' type='' class='output-txt' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8b154f5f-c4d8-4e81-b1fd-16f318307aea" InformativeScreenshot="23524a8aa68cb04ea3279fb5c882d95a.png" IsResponsive="True" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/4a_vTJvipku4hxFuMJ4ZWw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Gerador de RG - 4Devs' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
                           <uix:TargetAnchorable.Anchors>
@@ -879,7 +886,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NGetText>
-                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'A  /gerador_de_veiculos'" sap:VirtualizedContainerService.HintSize="416,139" sap2010:WorkflowViewState.IdRef="Click_38" KeyModifiers="None" MouseButton="BTN_LEFT">
+                    <ui:Click AlterIfDisabled="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="[CInt(TimeSpan.Parse(&quot;00:00:03&quot;).TotalSeconds)]" DisplayName="Click 'A  /gerador_de_veiculos'" sap:VirtualizedContainerService.HintSize="416,139" sap2010:WorkflowViewState.IdRef="Click_38" KeyModifiers="None" MouseButton="BTN_LEFT">
                       <ui:Click.CursorPosition>
                         <ui:CursorPosition Position="Center">
                           <ui:CursorPosition.OffsetX>
@@ -989,8 +996,9 @@
                         </uix:TargetAnchorable>
                       </uix:NGetText.Target>
                     </uix:NGetText>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[{nomeCliente,sexoCliente, cpfCliente,rgCliente,marcaCarro, anoCarro, corCarro, modeloCarro, placaCarro, renavamCarro}]" />
-                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{nomeCliente,sexoCliente, rgCliente,marcaCarro, anoCarro, corCarro, modeloCarro, placaCarro, renavamCarro}]" DataTable="[dadosCliente]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,211" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
+                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,117" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[New With { .nomeCliente = nomeCliente, .sexoCliente = sexoCliente, .cpfCliente = cpfCliente, .rgCliente = rgCliente, .marcaCarro = marcaCarro, .anoCarro = anoCarro, .corCarro = corCarro, .modeloCarro = modeloCarro, .placaCarro = placaCarro, .renavamCarro = renavamCarro }]" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[New With { .nomeCliente = nomeCliente, .sexoCliente = sexoCliente, .cpfCliente = cpfCliente, .rgCliente = rgCliente, .marcaCarro = marcaCarro, .anoCarro = anoCarro, .corCarro = corCarro, .modeloCarro = modeloCarro, .placaCarro = placaCarro, .renavamCarro = renavamCarro }]" />
+                    <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{nomeCliente, sexoCliente, cpfCliente, rgCliente, marcaCarro, anoCarro, corCarro, modeloCarro, placaCarro, renavamCarro,&quot;Encaminhado&quot;}]" DataTable="[dadosCliente]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="416,211" sap2010:WorkflowViewState.IdRef="AddDataRow_5" />
                   </Sequence>
                 </Sequence>
               </ActivityAction>
@@ -999,13 +1007,11 @@
               <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="5ItQFIg7Z0mqZUfvzzacVg" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAABYlAAAWJQFJUiTwAAAEr0lEQVRYR6WWW2xUVRSGdzQmhuiDohBv4A3FK8ZbhHhFeCAx8UEf5UEDVKIhhUIspaX0MtOZlmlrwYjYEqTRcotVBAQvjQoxCFEwoEiEaFvjBUICUZFW7Kf/WXucaXumnc7sZGXmnLP3Xv/617/W3u76GsjHbvA28N3AeaEWo88NepmFycF1NXB1FK7yNi5q366JwpVRGB+yLsxyAiDHN8XgoQQ8Vg+PN8CU5XBjjf1Oa4B76wzUcGxkDUAbKSpFKCdy4ErALQI3z34vi4B7CdwCcBVwV62xkxFENilILhatd8YtYrcUXDE8uxoWtkJdO0Q3w/RGKH4Tlm2AJ5rAVRoIgc4EYkgAWqTF+v9ovVHs5sOUBGzbC7+fIRgnTkHzThgVgY799u6r7+G8argkYiAyaSIjgGt91PfXwcMJi9gtgaat0H3cnGh88yNUbIQ74vZ9/jro67NvK7aCK4Kp9ZlTEQpAaG+Pw/QGo9EVwpwW2Hck5fiXk1D/rk9HEVwaMSduIWzebXOOdJsWxnoWFFQ/X2EaUHndHPOOX4SJcdj6BfzVY5ueOwdb9sC0RnCLwVXBgwm4NeaFWQbPrIKzvTa/fIMJVNoJY2EQAE24wiv91e1w7OdU1AeOQmmbOZHdXWumspRWFKUAuXLYc9jWfPClsTLZl+lAf/0AyLnqW7QtWAdnzqacf9flN58Fk+tgRqNpRM61sZjTb6CFxdD0nq3r+g3GKDWVqd7wv8+wFCSVr2iqNsGhH/qDqG33giwzjcihgMi5tCPRSowzX4OeXuj9GwpabM0jCQOckYGkBSwo2kUwOgJrPoTTfxiIf/pg10F4+hVrOBNjlq6xURNZoINy26PLV0sgVl8NApCug1AA2kiiukc5rTBKn1wBH/sa1zh5Glo7/PdSuK/O1k7SGgl4mfUCjbZPDawY6NcPwlKQDkK/EtkEIfXCK3mrvzC/7YR5ay1qAVaU45XzJdBxwOa8v88YkBCHrYKBJsSiWUAurLaNVSVrP0qV2g45KLTDSbm+QPNKzbGGmFM6pY8JMRNssP9QDKSbFogRCU4NKqC92OpdNL/zuVGsiNv1X2yVGrAhAWTDQLqJDaldFaJykqNx/lk57z5hDtU11cR2H7Ln7XvzSMFAE3oBuSVmbIwS3V50m3ZZWuJvgytIlXDbJzmIcDhLilTVIn1IhIpy7hqY8bKB+skzkshUhvkAkCkdQSoqoagVGrb4JlUCz72eakRzmq2Us25E2ZgYUAouUgrK4LODFu161fxsWL3Dnjt/hdEjacXZmnIZiK8cnloJf/pzo14svAD7j9rzzqEOo1wByPltcaNT0SfrXQ1K5TZzlVGvsXS9vQu9lOQCIHnqTVI/KIHCN8yRRiC2Wan6D07QCrh8iGvZiAHIdDlVo9E98fgpc6bbknseZjdDj49+5TYrv6kNIdHnAkDRq+wkKDk/3GmOdOYHx3BZ6tr29TGbl7yOhUWfUwpkYyIGQJcWRRzcHcvhgeVQ0AxzW/xFtsq0EurcW04ApAEdSOp+svOrrTMme4LeXRyxu+Wgi2i65cpA0nRM6+KhAyb9nRwPKrkwyxdAmKhGankByNv+Y+BfGL82k4PlYhkAAAAASUVORK5CYII=" InformativeScreenshot="2c406868f92abc383f7530b1f57666f6.jpg" Reference="ZEXXzmRlEE-OL1ynQQKEvQ/2JYGNHDjGUOisGL0gWOngA" Selector="&lt;html app='chrome.exe' title='4Devs - Ferramentas Online Grátis' /&gt;" Url="https://www.4devs.com.br/" Version="V2" />
             </uix:NApplicationCard.TargetApp>
           </uix:NApplicationCard>
-          <ui:BulkAddQueueItems TimeoutMS="{x:Null}" DisplayName="Bulk Add Queue Items" FolderPath="aprendizado" sap:VirtualizedContainerService.HintSize="554,226" sap2010:WorkflowViewState.IdRef="BulkAddQueueItems_1" QueueItemsDataTable="[dadosCliente]" QueueName="validadorDados" />
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="554,164" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;Sistema finalizado&quot;]" />
+          <ui:WriteCsvFile AddHeaders="True" DataTable="[dadosCliente]" Delimitator="Comma" DisplayName="Write CSV" FilePath="teste.csv" sap:VirtualizedContainerService.HintSize="518,186" sap2010:WorkflowViewState.IdRef="WriteCsvFile_1" ShouldQuote="True" />
+          <ui:BulkAddQueueItems TimeoutMS="{x:Null}" DisplayName="Bulk Add Queue Items" FolderPath="aprendizado" sap:VirtualizedContainerService.HintSize="518,226" sap2010:WorkflowViewState.IdRef="BulkAddQueueItems_1" QueueItemsDataTable="[dadosCliente]" QueueName="validarDados" />
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="518,164" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;Sistema finalizado&quot;]" />
         </Sequence>
       </ui:InterruptibleDoWhile.Body>
-      <ui:InterruptibleDoWhile.Condition>
-        <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="dadosCliente.RowCount &lt; 11" />
-      </ui:InterruptibleDoWhile.Condition>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
