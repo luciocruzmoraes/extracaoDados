@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fEsgziskS0WSaKu0gzBgpA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/validador_cpf" CVScreenId="21b575dc-f2b1-4515-ab2a-11002c3930ce" CvElementArea="667, 707, 17, 20" CvTextArea="468, 708, 101, 14" CvTextArgument="Validador de RG" CvType="ArrowButton" DesignTimeRectangle="460, 702, 228, 29" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Validador de RG' parentid='top-nav' tag='A' /&gt;" Guid="0724e7b3-51fd-4692-b9ac-a31430173bff" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador de CPF - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="21b575dc-f2b1-4515-ab2a-11002c3930ce" CvElementArea="667, 676, 17, 20" CvTextArea="468, 678, 148, 14" CvTextArgument="Validador de RENAVAM" CvType="ArrowButton" DesignTimeRectangle="460, 672, 228, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Validador de RENAVAM' parentid='top-nav' tag='A' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Validador de RENAVAM' /&gt;" Guid="0d42ef3f-6115-4c4e-a377-2838f2031fba" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="671fd1d178e770fe58a00b4915e8734e.png" xmlns="">02cWgP5flmU6rkfgQj_GNWw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
