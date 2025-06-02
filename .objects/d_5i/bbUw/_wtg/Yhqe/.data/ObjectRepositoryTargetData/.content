@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UtXFw-5JN0ucTbnL8zpRrA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="4devs.com.br/validador_de_renavam" CVScreenId="d01fc265-3e26-4b24-a803-52c197bee853" CvElementArea="996, 579, 249, 73" CvTextArea="1036, 604, 166, 20" CvTextArgument="Validar RENAVAM" CvType="Button" DesignTimeRectangle="1000, 584, 242, 66" ElementType="Button" FullSelectorArgument="&lt;webctrl id='bt_validar' tag='INPUT' /&gt;" Guid="3e50a6c7-d907-4a2b-8daf-fb313e0fe290" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Validador Online de RENAVAM - 4Devs' /&gt;" SearchSteps="Selector, CV" Version="V6" Visibility="Interactive" WaitForReadyArgument="None">
+      <imageRef attrName="InformativeScreenshot" originalValue="30d005af24e0206bda9919073625fe52.png" xmlns="">0sNpc99MUa0uySJTuv5mANg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
